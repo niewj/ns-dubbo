@@ -1,0 +1,16 @@
+
+dubbo:
+  application:
+    name: ns-provider
+  protocol:
+    name: dubbo
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+    id: zk-registry
+  config-center:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181
+server:
+  port: 8001
